@@ -15,10 +15,12 @@ async def extract_metadata(docs):
             
             Step 1 - Extraction: Extract these sections out of the Kurzbeschreibung table: [country, 
             program (EZ_Programm), project, core_area (kernthema in the reports), year (year of the report in 
-            Berichtszeitraum)]. Extract the value which comes after EZ_Programm  in the Kurzbeschreibung as the program
-            field. Extract the value which comes afterKernthema in the Kurzbeschreibung as the theme. Extract  
-            Berichtszeitraum year as the year field. Rely on the Kurzbeschreibung for the kernthema field. Return 
-            "not specified" if not found. You can use the year specified in the file name to fill the year field.
+            Berichtszeitraum)]. 
+            Fill the "program" field with answer to this question "What is the EZ-programm about?" from the report.
+            Fill the "theme" field with answer to this question "What is the Kernthema about?" from the report.
+            Extract Berichtszeitraum year as the year field. Rely on the Kurzbeschreibung for the kernthema field. 
+            Return "not specified" if not found. You can use the year specified in the file name to fill the 
+            year field.
 
             Step 2 - Status: Add project completion status by comparing the current month and year to the completion
             date specified in Berichtszeitraum. The dates in the document are specified as month/year format.
