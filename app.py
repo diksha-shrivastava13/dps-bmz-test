@@ -73,7 +73,7 @@ qa_data = []
 # query functionality
 processing_container = st.empty()
 processing_container.markdown(" ")
-question = st.text_input("Please enter your question:")
+question = st.text_area("Please enter your question:")
 
 if st.button('Generate :sparkles:'):
     prompt = question + (" Return the answer in markdown. Answer in English. Be detailed and include proofs from the"
