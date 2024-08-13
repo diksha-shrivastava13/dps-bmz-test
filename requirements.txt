@@ -9,3 +9,6 @@ python-dotenv
 pinecone-client
 llama-index-vector-stores-pinecone
 pydantic
+streamlit
+llama-index-llms-azure-openai
+llama-index-embeddings-openai
