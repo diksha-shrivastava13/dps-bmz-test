@@ -1,0 +1,11 @@
+streamlit
+llama-parse
+llama-index
+llama-index-core
+google-generativeai
+llama-index-llms-gemini
+llama-index-embeddings-gemini
+python-dotenv
+pinecone-client
+llama-index-vector-stores-pinecone
+pydantic
