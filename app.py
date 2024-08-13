@@ -30,6 +30,21 @@ st.markdown(
     "Ask any questions about the following documents ️↠",
     unsafe_allow_html=True)
 
+with st.sidebar:
+    st.markdown("<h4 style='text-align: center;'> ⏳ Instructions to Prompt:  </h4>", unsafe_allow_html=True)
+    st.markdown("1. The prompt may be as long as you like, but not longer than a page.")
+    st.markdown("2. All documents are stored in the database. You can ask questions about these files: ")
+    st.markdown(" - All Modul_AA_IDN_Energy_REEP")
+    st.markdown(" - All Modul_BE_DZA_Nachhaltige Stadtentwicklung_Abfall")
+    st.markdown(" - All Modul_BE_IDN_Energy_REEP")
+    st.markdown(" - All Modul_Final Report_DZA_Nachhaltige Stadtentwicklung_Abfall")
+    st.markdown(" - All Modul_VS_IDN_Energy_ETAP")
+    st.markdown(" - All Modul_VS_IDN_Energy_SOCOOL")
+    st.markdown(" - All Programm_BE_IDN_Climate and Forest_NA")
+    st.markdown(" - Programm_Bericht_South Africa_TVET and Employment_Final")
+    st.markdown(" - Programm+Module_BE_IDN_Energy_NA_2021")
+    st.markdown(" - Programmentwurf_South_Africa_TVET and Employment_2023")
+
 # display files
 file_names = ["Modul_AA_IDN_Energy_REEP_2022.pdf",
               "Modul_ÄA_IDN_Energy_REEP_2023.pdf",
